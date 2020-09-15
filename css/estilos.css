@@ -1,0 +1,21 @@
+.color-facebook{
+    color: #3b5998;
+}
+
+.color-instagram{
+    color: #ff0084;
+}
+
+.color-twitter{
+    color: #55acee;
+}
+
+.color-whatsapp{
+    color: #4dc247;
+}
+
+.card-hotel{
+    flex: 1 150px;
+    padding: 2px;
+    border: 0.2px solid rgb(138, 138, 197);
+}
