@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6df470b726.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a href="#" class="navbar-brand lead">Hoteles</a>
+          <button class="nabar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbar-menu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+                  <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Terminos y Condiciones</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+       <div class="container mt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+        <h1>Dejame tu Comentario</h1>
+        <form>
+            <div class="form-row">
+                <div class="col-sm-6 form-group">
+                  <label for="nombre" class="lead">Nombre</label>
+                  <input type="text" id="nombre" class="form-control" placeholder="Ingrese Nombre">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="apellido" class="lead">Apellidos</label>
+                    <input type="text" id="apellido" class="form-control" placeholder="Ingrese Apellidos">
+                </div>
+             </div>
+             <div class="form-group">
+                 <label for="email" class="lead">Email</label>
+                 <input type="text" id="email" placeholder="Direccion Email" class="form-control">
+             </div>
+             <!-- <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="contraseña">Ingrese Contraseña</label>
+                    <input type="password" id="contraseña" class="form-control" placeholder="Ingrese Contraseña">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="rep-contraseña">Confirmar Contraseña</label>
+                    <input type="password" id="rep-contraseña" class="form-control" placeholder="Repita Contraseña">
+                </div>
+             </div> -->
+             <div class="form-row">
+                 <div class="form-group col-sm-9">
+                    <label for="domicilio" class="lead">Domicilio</label>
+                    <input type="text" id="domicilio" class="form-control" placeholder="Direccion">
+                 </div>
+                 <div class="form-group col-sm-3">
+                     <label for="Provincia" class="lead">Provincia</label>
+                    <select  id="Provincia" class="form-control">
+                        <option selected>Pereira</option>
+                        <option value="">Medellin</option>
+                        <option value="">Manizales</option>
+                        <option value="">Armenia</option>
+                    </select>
+                 </div>
+                 
+             </div>
+             <div class="form-group">
+                 <label for="comentario" class="lead">Comentario</label>
+                 <textarea  id="comentario" class="form-control" rows="2"></textarea>
+             </div>
+             <div class="form-group">
+                 <div class="form-check">
+                     <input type="checkbox" class="form-check-input" id="checar">
+                     <label for="checar" class="lead">Quiero que me Contacten</label>
+                 </div>
+             </div>
+             <button type="submit" class="btn btn-outline-primary btn-lg  btn-block">Enviar</button>
+        </form>
+       </div>
+      
+       <footer>
+         <div class="row bg-warning">
+            <div class="col-sm-4 d-flex justify-content-around align-items-center">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x color-facebook "></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x color-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x color-twitter"></i></a>
+                <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp fa-2x color-whatsapp"></i></a>
+            </div>
+            <div class="col-sm-4 text-dark d-flex flex-column">
+                <p class="lead text-danger">Sopetran 854 Antioquia, Colombia
+                    +57-3508436568 
+                    contacto@guiaHoteles.com
+                </p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="#" class="lead">Nosotros</a>
+                <a href="#" class="lead">Servicios</a>
+                <a href="#" class="lead">contacto</a>
+                <a href="#" class="lead">Acerca de</a>
+            </div>
+         </div>
+       </footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
