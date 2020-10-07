@@ -76,7 +76,7 @@
                 <img src="./Imagenes/mariscal.jpg" alt="Mariscal" class="card-img-top foto">
                   <div class="card-body">
                      
-                    <h4 class="card-title">Hotel Mariscal Robledo</h4>
+                    <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Las Primeras reservas cuentan con Reservas de Rango Gratis">Hotel Mariscal Robledo</h4>
                     <h5 class="text-muted">Santa fe de Antioquia</h5>
                     <p class="card-text">Hotel ubicado en pleno parque la Chinca en el municipio Historico de Santa fe de Antioquia , y sus calles y casas con Arquitectura colonial</p>
                 </div>
@@ -153,7 +153,7 @@
                     </p>
                 </div>
                 <div>
-                <button class="btn btn-lg btn-primary btn-block"><span class="oi oi-plus"></span> Reservar</button>
+                <button class="btn btn-lg btn-primary btn-block" data-toggle="popover" title="Promociones" data-content="40% de descuento"><span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
             <div class=" card card-hotel d-flex flex-column justify-content-between">
@@ -181,7 +181,7 @@
             <div class=" card card-hotel d-flex flex-column justify-content-between">
                 <img src="./Imagenes/tamarindo.jpg" alt="El Tamarindo" class="card-img-top foto">
                 <div class="card-body">
-                 <h4 class="card-title">Hotel el Tamarindo</h4>
+                 <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Reservas al 50% de descuento">Hotel el Tamarindo</h4>
                  <h5 class="text-muted">Sopetran</h5>
                  <p class="card-text">Hotel Ubicado en el Parque Principal de Sopetran con muchas discotecas cerca </p>
                 </div>
@@ -203,7 +203,7 @@
             <div class=" card card-hotel d-flex flex-column justify-content-between">
                 <img src="./Imagenes/lago.jpg" alt="Lago Grande" class="card-img-top foto">
                 <div class="card-body">
-                <h4 class="card-title">Lago Grande</h4>
+                <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Reservas Agotadas">Lago Grande</h4>
                 <h5 class="text-muted">Sopetran</h5>
                 <p class="card-text">Hacienda Ubicada en la zona rural de sopetran , con lagos y caballos </p>
                 </div>
@@ -219,7 +219,7 @@
                 <p class="card-text">Hotel Ubicado en el Parque Principal de Sopetran con muchas discotecas cerca </p>
                 </div>
                 <div>
-                <button class="btn btn-lg btn-primary btn-block"><span class="oi oi-plus"></span> Reservar</button>
+                <button class="btn btn-lg btn-primary btn-block" data-toggle="popover" title="Promociones" data-content="Consulta las Promociones Vigentes"><span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
             <div class=" card card-hotel d-flex flex-column justify-content-between">
@@ -344,5 +344,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("[data-toggle = 'tooltip']").tooltip();
+          $('[data-toggle="popover"]').popover();
+     });
+
+    </script>
 </body>
 </html>
