@@ -68,6 +68,30 @@
            
            </div>
            <hr>
+           <div class="carousel side" id="carouselControls" data-ride="carousel">
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="./Imagenes/hoteless.jpg" alt="" class="d-block w-100">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="./Imagenes/hotelessss.jpg" alt="" class="d-block w-100">
+                   </div>
+                   <div class="carousel-item">
+                    <img src="./Imagenes/hotel.jpg" alt="" class="d-block w-100">
+                 </div>
+                 <div class="carousel-item">
+                    <img src="./Imagenes/hote.jpg" alt="" class="d-block w-100">
+                 </div>
+               </div>
+               <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Siguiente</span>
+               </a>
+               <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+           </div>
            <h2 class="display-2 lead text-danger">Ruta del Sol</h2>
            <img src="./Imagenes/pu.jpg" alt="Puente Occidente" class="img-fluid" style="height: 520px; width: 100%;">
            <span class="text-success lead mb-5"> Santa fe de Antioquia /Sopetran /San Jeronimo</span>
@@ -345,9 +369,13 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(function () {
-            $("[data-toggle = 'tooltip']").tooltip();
+        
+        $(function() {
+          $("[data-toggle = 'tooltip']").tooltip();
           $("[data-toggle='popover']").popover();
+          $('.carousel').carousel({
+              interval : 5000
+          });
      });
 
     </script>
