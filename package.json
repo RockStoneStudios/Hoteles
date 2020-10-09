@@ -4,14 +4,15 @@
   "description": "Primer Web Responsibe con Grid-BootStrap",
   "main": "index.html",
   "scripts": {
-    
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "dev": "lite-server",
-    "start" : "concurrently \"npm run watch:scss\" \"npm run dev\""
-
-
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin Imagenes/* --out-dir dist/Imagenes",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin nosotros.html -d dist --htmlmin -o dist/nosotros.html && usemin servicios.html -d dist --htmlmin -o dist/servicios.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "author": "Omar Ortiz",
   "license": "ISC",
@@ -20,9 +21,12 @@
     "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "uglify-js-es6": "^2.8.9",
+    "usemin-cli": "^0.6.0"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.0",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
     "rimraf": "^3.0.2"
