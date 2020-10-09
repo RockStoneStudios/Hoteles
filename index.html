@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/6df470b726.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
+   
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
               </ul>
           </div>
       </nav>
-        <div class="jumbotron bg-warning">
+        <div class="jumbotron">
            <h1>Hoteles</h1>
           </div>
        <div class="container">
@@ -85,7 +86,7 @@
                </div>
                <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Siguiente</span>
+                   <span class="sr-only">Anterior</span>
                </a>
                <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -265,7 +266,7 @@
                 <p class="card-text">El Hotel Lagotours cuenta con bar, salón compartido, jardín e instalaciones para practicar deportes acuáticos en San Jerónimo.</p>
                 </div>
                 <div>
-                <button class="btn btn-lg btn-outline-success btn-block" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus"></span> Reservar</button>
+                <button class="btn btn-lg btn-outline-success btn-block" data-toggle="modal" data-target="#contacto" id= "contactoBtn"><span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
 
@@ -376,7 +377,21 @@
           $('.carousel').carousel({
               interval : 5000
           });
+
+          $('#contacto').on('show.bs.modal',function(e){
+              
+              $('#contactoBtn').removeClass('btn-outline-success');
+              $('#contactoBtn').addClass('btn-primary');
+              $('#contactoBtn').prop('disabled',true);
+          });
+
+          $('#contacto').on('hidden.bs.modal', function(e){
+              $('#contactoBtn').prop('disabled',false);
+              $('#contactoBtn').addClass('btn-');
+          })
      });
+
+
 
     </script>
 </body>

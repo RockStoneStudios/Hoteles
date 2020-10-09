@@ -1,3 +1,11 @@
+$yellow: #f3ef4b;
+@mixin margenes($top,$bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+
+
 .color-facebook{
     color: #3b5998;
 }
@@ -21,12 +29,11 @@
 }
 
 .jumbotron{
-    margin-top: 30px;
-    background-color: #fffb1e;
+    @include margenes(30px, 0px);
+    background-color: $yellow;
 }
 .container {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    @include margenes(40px, 20px);
 }
 
 .imagen-principal{
