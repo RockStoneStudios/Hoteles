@@ -347,7 +347,7 @@
          <hr>
        <footer>
          <div class="row bg-warning">
-            <div class="col-sm-4 d-flex justify-content-around align-items-center">
+            <div class="col-sm-4 d-flex  justify-content-around align-items-center">
                 <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x color-facebook "></i></a>
                 <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x color-instagram"></i></a>
                 <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x color-twitter"></i></a>
@@ -372,31 +372,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        
-        $(function() {
-          $("[data-toggle = 'tooltip']").tooltip();
-          $("[data-toggle='popover']").popover();
-          $('.carousel').carousel({
-              interval : 5000
-          });
-
-          $('#contacto').on('show.bs.modal',function(e){
-              
-              $('#contactoBtn').removeClass('btn-outline-success');
-              $('#contactoBtn').addClass('btn-primary');
-              $('#contactoBtn').prop('disabled',true);
-          });
-
-          $('#contacto').on('hidden.bs.modal', function(e){
-              $('#contactoBtn').prop('disabled',false);
-              $('#contactoBtn').addClass('btn-');
-          })
-     });
-  
-
-
-    </script>
+    <script src="./js/index.js"></script>
     <!--endbuild-->
 </body>
 </html>

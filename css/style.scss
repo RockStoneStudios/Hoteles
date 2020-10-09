@@ -1,4 +1,6 @@
 $yellow: #f3ef4b;
+$rojo : #ff0100;
+$verde : #01ff01;
 @mixin margenes($top,$bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
@@ -19,7 +21,7 @@ $yellow: #f3ef4b;
 }
 
 .color-whatsapp{
-    color: #4dc247;
+    color: $verde;
 }
 
 .card-hotel{
